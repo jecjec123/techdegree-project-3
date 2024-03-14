@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>techdegree-project-3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main-title">
+      <h1>The Code Review</h1>
+    </div>
+    <div class="container">
+      <div class="title">
+        <h1>Signup for our newsletter</h1>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+      <hr class="line-1">
+      <hr class="line-2">
+      <form>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div class="col">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="user-fullname" placeholder="Required" required> 
+          </div>
+          <div class="col">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="user-email" placeholder="Required" required>
+          </div>
+          <div class="col">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="user-phone" placeholder="Required" required>
+          </div>
+          <div class="col">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user-address" placeholder="Required" required>
+          </div>
+          <div class="col">
+            <label for="city">City</label>
+            <input type="text" id="city" name="user-city" placeholder="Required" required>
+          </div>
+          <div class="col">
+            <label for="state">State</label>
+            <select id="state" name="user-state">
+              <optgroup label="Metro Manila">
+                <option value="Manila">Choose State</option>
+                <option value="Las-Pinas">Las Pinas</option>
+                <option value="Caloocan">Caloocan</option>
+                <option value="Makati">Makati</option>
+                <option value="Malabon">Malabon</option>
+                <option value="Mandaluyong">Mandaluyong</option>
+                <option value="Manila">Manila</option>
+                <option value="Marikina">Marikina</option>
+                <option value="Muntinlupa">Muntinlupa</option>
+                <option value="Navotas">Navotas</option>
+                <option value="Paranaque">Paranaque</option>
+                <option value="Pasay">Pasay</option>
+                <option value="Pasig">Pasig</option>
+                <option value="Pateros">Pateros</option>
+                <option value="Quezon-City">Quezon City</option>
+                <option value="San-Juan">San Juan </option>
+                <option value="Taguig">Taguig</option>
+                <option value="Valenzuela">Valenzuela</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="col">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="user-zipcode" placeholder="Required" required>
+          </div>
+        </fieldset>
+        <hr class="line-3">
+        <fieldset>
+          <legend>Newsletter</legend>
+          <div class="new-col">
+            <p class="sub-text-header">Select the newsletters you would like to recieve</p>
+            <input type="checkbox" id="html-news" value="webdev-html-news" name="user-news">
+            <label for="html-news">HTML News</label>
+            <br>
+            <input type="checkbox" id="css-news" value="webdev-css-news" name="user-news">
+            <label for="css-news">CSS News</label>
+            <br>
+            <input type="checkbox" id="js-news" value="webdev-js-news" name="user-news">
+            <label for="js-news">Javascript News</label>
+            <br>
+            <p class="sub-text-header">Newsletter format</p>
+            <input type="radio" id="html" value="html" name="user-text">
+            <label for="html">HTML</label>
+            <br>
+            <input type="radio" id="ptext" value="ptext" name="user-text">
+            <label for="ptext">Plain text</label>
+          </div>
+          <div class=" col text-area">
+            <label for="description">Other topics you'd like to hear about </label>
+            <textarea id="description" cols="30" rows="5" name="user-description" placeholder="Required" required></textarea>
+          </div>
+          <button type="submit">Sign Up</button>
+        </fieldset>
+        <footer>
+          <p>Copyright &copy; The Code Review</p>
+        </footer>
+      </form>
+    </div>
+  </body>
+</html>
